@@ -1,0 +1,90 @@
+/*
+color scheme:
+
+navbar
+
+main hero
+h1 font / color
+h1:after / font
+h2 font / color
+h3 font / color
+p font / color
+*/
+
+$breakpoints:(
+  'micro' : (min-width: 320px),
+  'mobile' : (min-width:600px),
+  'small' : (min-width: 767px ),
+  'medium' : (min-width: 992px ),
+  'large' : (min-width: 1200px )
+);
+
+@mixin respond-to($name){
+  //If the key exists in the map
+  @if map-has-key($breakpoints, $name){
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))}{
+      
+@content;
+    }
+   }
+
+  // If the key doesn't exist in the map
+  @else{ 
+    @warn "Unfortunately, no value could be retrieved from '#(breakpoint}`."
+      + "Please make sure it is defined in `$breakpoints` map.";
+   }
+  }
+
+
+//HERO HEIGHT
+//remember to check that the length of the str slice matches the length of thevalue in $breakpoint map. 
+@mixin height($breakpoints, $multiplier){
+	@include respond-to('micro'){
+	 height: str-slice($name,12,15)*$multipler; 
+	 }
+	@include respond-to('mobile'){
+	  height: str-slice($name,12,15)*$multiplier ;
+	  }
+	@include respond-to('small'){ 
+	   height: str-slice($name,12,15)*$multiplier ;
+	  }
+	@include respond-to('medium'){
+	 height: str-slice($name,12,15)*$multiplier ;
+	 } 
+	@include respond-to('large'){
+	  height: str-slice($name,12,16)*$multiplier;
+	}
+}
+
+.mainhero{
+//@include span(full);
+@include height(1.25);
+background: {
+    image: url("images/executive communication.jpg");
+    repeat: no-repeat;
+    attachment: fixed;
+    size: cover;
+    position: center;
+    }
+}
+/*
+@include respond-to('micro'){
+ height: 340px; 
+ }
+@include respond-to('mobile'){
+  height: 450px ;
+  }
+@include respond-to('small'){ 
+  height: 600px;
+  }
+@include respond-to('medium'){
+  height: 890px;
+ } 
+@include respond-to('large'){
+  height: 1000px;
+}*/
+
+.secondhero{
+@include span(full);
+}
