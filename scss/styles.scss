@@ -1,15 +1,4 @@
-/*
-color scheme:
-
-navbar
-
-main hero
-h1 font / color
-h1:after / font
-h2 font / color
-h3 font / color
-p font / color
-*/
+@import "susy";
 
 $breakpoints:(
   'micro' : (min-width: 320px),
@@ -57,53 +46,80 @@ $breakpoints:(
 	}
 }
 */
+#title{
+@include span(full);
+height: auto;
+}
+
+#titleheading{
+color:#241c22ff;
+/*
+		@include respond-to('micro'){
+		 font: 14px; 
+		 }
+		@include respond-to('mobile'){
+		  font: 20px ;
+		  }
+		@include respond-to('small'){ 
+		  font: 32px;
+		  }
+		@include respond-to('medium'){
+		  height: 150px;
+		  } 
+		@include respond-to('large'){
+		  height: 70px;
+	}
+*/
+}
+
+#titlesubheading{;
+  }
+
 
 .mainhero{
-//@include span(full);
+@include span(full);
 background: {
-    image: url("images/executive communication.jpg");
+    image: url("../images/executive communication.jpg");
     repeat: no-repeat;
     attachment: fixed;
-    size: cover;
+    size: 150% auto;
     position: center;
     }
-}
 
-@include respond-to('micro'){
- height: 340px; 
- }
-@include respond-to('mobile'){
-  height: 450px ;
-  }
-@include respond-to('small'){ 
-  height: 600px;
-  }
-@include respond-to('medium'){
-  height: 890px;
- } 
-@include respond-to('large'){
-  height: 1000px;
-}
 
+		@include respond-to('micro'){
+		 height: 340px; 
+		 }
+		@include respond-to('mobile'){
+		  height: 450px ;
+		  }
+		@include respond-to('small'){ 
+		  height: 600px;
+		  }
+		@include respond-to('medium'){
+		  height: 890px;
+		  } 
+		@include respond-to('large'){
+		  height: 1000px;
+		}
+}
 .secondhero{
 @include span(full);
 }
 
 .thirdhero{
 @include span(full);
-background-image:url('images/the future2.jpg')
 background: {
-    image: url("images/executive communication.jpg");
+    image: url("../images/the future2.jpg");
     repeat: no-repeat;
     attachment: fixed;
     size: cover;
     position: center;
     }
-
 }
 
 .taglinecloser{
-@include span(full);
+  @include span(full);
 }
 
 .mainheading{
@@ -111,5 +127,3 @@ background: {
   font-size:40px;
   }
 }
-
-
