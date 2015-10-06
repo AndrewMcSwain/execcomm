@@ -1,144 +1,35 @@
 /*
-Error: Undefined variable: "$name".
-        on line 44 of scss/styles.scss, in `@content'
-        from line 28 of scss/styles.scss, in `respond-to'
-        from line 43 of scss/styles.scss, in `height'
-        from line 62 of scss/styles.scss
+Error: Invalid CSS after "background-image:": expected "{", was "url('images/the..."
+        on line 94 of scss/styles.scss
 
-39: 
-40: //HERO HEIGHT
-41: //remember to check that the length of the str slice matches the length of thevalue in $breakpoint map. 
-42: @mixin height($multiplier){
-43: 	@include respond-to('micro'){
-44: 	 height: str-slice($name,12,15)*$multipler; 
-45: 	 }
-46: 	@include respond-to('mobile'){
-47: 	  height: str-slice($name,12,15)*$multiplier ;
-48: 	  }
-49: 	@include respond-to('small'){ 
+89: @include span(full);
+90: }
+91: 
+92: .thirdhero{
+93: @include span(full);
+94: background-image:url('images/the future2.jpg')
+95: background: {
+96:     image: url("images/executive communication.jpg");
+97:     repeat: no-repeat;
+98:     attachment: fixed;
+99:     size: cover;
 
 Backtrace:
-scss/styles.scss:44:in `@content'
-scss/styles.scss:28:in `respond-to'
-scss/styles.scss:43:in `height'
-scss/styles.scss:62
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/variable.rb:49:in `_perform'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/node.rb:50:in `perform'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/funcall.rb:170:in `perform_arg'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/funcall.rb:124:in `each'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/funcall.rb:124:in `each_with_index'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/funcall.rb:124:in `each'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/funcall.rb:124:in `map'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/funcall.rb:124:in `_perform'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/node.rb:50:in `perform'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/operation.rb:64:in `_perform'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/node.rb:50:in `perform'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:382:in `block (3 levels) in visit_content'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:382:in `map'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:382:in `block (2 levels) in visit_content'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:381:in `block in visit_content'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:98:in `block in with_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:98:in `with_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:377:in `visit_content'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:513:in `visit_media'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:299:in `block (2 levels) in visit_if'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:299:in `map'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:299:in `block in visit_if'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:298:in `visit_if'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:364:in `block (4 levels) in visit_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:364:in `map'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:364:in `block (3 levels) in visit_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:364:in `block (2 levels) in visit_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:84:in `perform_arguments'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:359:in `block in visit_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:98:in `block in with_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:98:in `with_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:347:in `visit_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:364:in `block (4 levels) in visit_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:364:in `map'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:364:in `block (3 levels) in visit_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:364:in `block (2 levels) in visit_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:84:in `perform_arguments'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:359:in `block in visit_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:98:in `block in with_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:98:in `with_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:347:in `visit_mixin'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `map'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:36:in `css_tree'
-/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+scss/styles.scss:94
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1162:in `expected'
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1098:in `expected'
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1093:in `tok!'
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:638:in `block'
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:708:in `declaration_or_ruleset'
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:658:in `block_child'
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:650:in `block_contents'
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:639:in `block'
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:632:in `ruleset'
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:657:in `block_child'
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:650:in `block_contents'
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:117:in `stylesheet'
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:42:in `parse'
+/home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:403:in `_to_tree'
 /home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:378:in `_render_with_sourcemap'
 /home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:295:in `render_with_sourcemap'
 /home/juniper/.gem/ruby/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
@@ -157,4 +48,4 @@ scss/styles.scss:62
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$name\".\A         on line 44 of scss/styles.scss, in `@content'\A         from line 28 of scss/styles.scss, in `respond-to'\A         from line 43 of scss/styles.scss, in `height'\A         from line 62 of scss/styles.scss\A \A 39: \A 40: //HERO HEIGHT\A 41: //remember to check that the length of the str slice matches the length of thevalue in $breakpoint map. \A 42: @mixin height($multiplier){\A 43: 	@include respond-to('micro'){\A 44: 	 height: str-slice($name,12,15)*$multipler; \A 45: 	 }\A 46: 	@include respond-to('mobile'){\A 47: 	  height: str-slice($name,12,15)*$multiplier ;\A 48: 	  }\A 49: 	@include respond-to('small'){ "; }
+  content: "Error: Invalid CSS after \"background-image:\": expected \"{\", was \"url('images/the...\"\A         on line 94 of scss/styles.scss\A \A 89: @include span(full);\A 90: }\A 91: \A 92: .thirdhero{\A 93: @include span(full);\A 94: background-image:url('images/the future2.jpg')\A 95: background: {\A 96:     image: url(\"images/executive communication.jpg\");\A 97:     repeat: no-repeat;\A 98:     attachment: fixed;\A 99:     size: cover;"; }

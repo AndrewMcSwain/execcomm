@@ -36,10 +36,10 @@ $breakpoints:(
    }
   }
 
-
+/*
 //HERO HEIGHT
 //remember to check that the length of the str slice matches the length of thevalue in $breakpoint map. 
-@mixin height($breakpoints, $multiplier){
+@mixin height($multiplier){
 	@include respond-to('micro'){
 	 height: str-slice($name,12,15)*$multipler; 
 	 }
@@ -56,10 +56,10 @@ $breakpoints:(
 	  height: str-slice($name,12,16)*$multiplier;
 	}
 }
+*/
 
 .mainhero{
 //@include span(full);
-@include height(1.25);
 background: {
     image: url("images/executive communication.jpg");
     repeat: no-repeat;
@@ -68,7 +68,7 @@ background: {
     position: center;
     }
 }
-/*
+
 @include respond-to('micro'){
  height: 340px; 
  }
@@ -83,8 +83,33 @@ background: {
  } 
 @include respond-to('large'){
   height: 1000px;
-}*/
+}
 
 .secondhero{
 @include span(full);
 }
+
+.thirdhero{
+@include span(full);
+background-image:url('images/the future2.jpg')
+background: {
+    image: url("images/executive communication.jpg");
+    repeat: no-repeat;
+    attachment: fixed;
+    size: cover;
+    position: center;
+    }
+
+}
+
+.taglinecloser{
+@include span(full);
+}
+
+.mainheading{
+  @include respond-to('micro'){
+  font-size:40px;
+  }
+}
+
+
