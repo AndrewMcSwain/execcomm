@@ -25,78 +25,82 @@
   margin-left: 0;
   margin-right: 0;
   height: auto; }
+  @media (min-width: 320px) {
+    #title:after {
+      background-color: #241c22ff;
+      height: 40px;
+      position: relative;
+      top: -50px;
+      z-index: 1; } }
+@media (min-width: 320px) and (min-width: 600px) {
+  #title {
+    font: 20px; } }
+@media (min-width: 320px) and (min-width: 767px) {
+  #title {
+    font: 32px; } }
+@media (min-width: 320px) and (min-width: 992px) {
+  #title {
+    height: 150px; } }
+@media (min-width: 320px) and (min-width: 1200px) {
+  #title {
+    height: 70px; } }
 
 #titleheading {
-  color: #241c22ff;
-  /*
-  		@include respond-to('micro'){
-  		 font: 14px; 
-  		 }
-  		@include respond-to('mobile'){
-  		  font: 20px ;
-  		  }
-  		@include respond-to('small'){ 
-  		  font: 32px;
-  		  }
-  		@include respond-to('medium'){
-  		  height: 150px;
-  		  } 
-  		@include respond-to('large'){
-  		  height: 70px;
-  	}
-  */ }
-
-.mainhero {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  background-image: url("../images/executive communication.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 150% auto;
-  background-position: center; }
+  color: #241c22ff; }
   @media (min-width: 320px) {
-    .mainhero {
-      height: 340px; } }
-  @media (min-width: 600px) {
-    .mainhero {
-      height: 450px; } }
-  @media (min-width: 767px) {
-    .mainhero {
-      height: 600px; } }
-  @media (min-width: 992px) {
-    .mainhero {
-      height: 890px; } }
-  @media (min-width: 1200px) {
-    .mainhero {
-      height: 1000px; } }
-
-.secondhero {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0; }
-
-.thirdhero {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  background-image: url("../images/the future2.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center; }
-
-.taglinecloser {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0; }
-
-@media (min-width: 320px) {
-  .mainheading {
-    font-size: 40px; } }
+    #titleheading:after {
+      font: 12px;
+      color: white;
+      position: relative;
+      top: -50px;
+      z-index: 2; } }
+  #titleheading .mainhero {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url("../images/executive communication.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 150% auto;
+    background-position: center; }
+    @media (min-width: 320px) {
+      #titleheading .mainhero {
+        height: 340px; } }
+    @media (min-width: 600px) {
+      #titleheading .mainhero {
+        height: 450px; } }
+    @media (min-width: 767px) {
+      #titleheading .mainhero {
+        height: 600px; } }
+    @media (min-width: 992px) {
+      #titleheading .mainhero {
+        height: 890px; } }
+    @media (min-width: 1200px) {
+      #titleheading .mainhero {
+        height: 1000px; } }
+  #titleheading .secondhero {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  #titleheading .thirdhero {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url("../images/the future2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; }
+  #titleheading .taglinecloser {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  @media (min-width: 320px) {
+    #titleheading .mainheading {
+      font-size: 40px; } }
 
 /*# sourceMappingURL=styles.css.map */

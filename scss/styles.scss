@@ -49,13 +49,14 @@ $breakpoints:(
 #title{
 @include span(full);
 height: auto;
-}
 
-#titleheading{
-color:#241c22ff;
-/*
 		@include respond-to('micro'){
-		 font: 14px; 
+		 &:after{
+		   background-color:#241c22ff;
+		   height: 40px;
+		   position:relative;
+		   top: -50px;
+		   z-index:1; 
 		 }
 		@include respond-to('mobile'){
 		  font: 20px ;
@@ -68,8 +69,22 @@ color:#241c22ff;
 		  } 
 		@include respond-to('large'){
 		  height: 70px;
-	}
-*/
+                  }
+
+		}
+}
+
+
+#titleheading{
+color:#241c22ff;
+@include respond-to('micro'){
+		 &:after{
+		  font: 12px;
+		  color: white; 
+		  position:relative;
+		  top: -50px;
+		  z-index:2; 
+		 }
 }
 
 #titlesubheading{;
@@ -126,4 +141,5 @@ background: {
   @include respond-to('micro'){
   font-size:40px;
   }
+}
 }

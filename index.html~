@@ -14,31 +14,31 @@
 
 <body>
 <div class="mainhero">
-<h1 class="mainheading">Executive Communications</h1>
-<h2 class=mainsubheading">Performance Oriented Communications Coaching</h2>
+  
+  <h4 class=mainsubheading">Performance Oriented Coaching</h4>
 </div>
 
-
-<div class="secondhero"> 
+<div class="secondhgero"> 
 <h1 class="secondsubheading">Effective Communication</h1>
 <h2 class="subheading" id="sh2">in High-Stakes Environments</h2>
-<p class="text" id="t2">when every detail matters. achieve pinpoint accuracy in your speech and delivery</p>
+<p class="text" id="t2">when every detail matters<br></p>
+<p class="text"> achieve pinpoint accuracy in your speech and delivery</p>
 
-//i need an image with a black opacity 80% overlay
-//text is mainly white but has perhaps a slightly golden tinge to it
-//or some effect on the color or opacity/lightness
+<--!i need an image with a black opacity 80% overlay
+text is mainly white but has perhaps a slightly golden tinge to it
+or some effect on the color or opacity/lightness
 
-//make this first one 1 size larger, perhaps a thicker variation
+//make this first one 1 size larger, perhaps a thicker variation//-->
 <p class="text" id="t2a">hold attention.</p>
 <p class="text" id="t2b">communicate</p>
 <p class="text" id="t2c">empathy</p>
 <p class="text" id="t2c">authority</p>
-//make this last one 1 size larger, perhaps a thicker variation
+<--//make this last one 1 size larger, perhaps a thicker variation!-->
 <p class="text" id="t3a">get your point across.</p>
 </div>
 
 <div class="thirdhero">
-//use the bridge
+<--//use the bridge//-->
 <h1 class="heading">High-Stakes Communications Training</h1>
 <h2 class="subheading">For When It Matters Most</h2>  
 </div>
