@@ -27,24 +27,44 @@
   height: auto; }
 
 #titleheading {
-  color: #241c22ff;
-  /*
-  		@include respond-to('micro'){
-  		 font: 14px; 
-  		 }
-  		@include respond-to('mobile'){
-  		  font: 20px ;
-  		  }
-  		@include respond-to('small'){ 
-  		  font: 32px;
-  		  }
-  		@include respond-to('medium'){
-  		  height: 150px;
-  		  } 
-  		@include respond-to('large'){
-  		  height: 70px;
-  	}
-  */ }
+  color: #241c22ff; }
+  @media (min-width: 320px) {
+    #titleheading {
+      font-size: 40px;
+      padding-top: 1px;
+      padding-left: 5px; } }
+  @media (min-width: 600px) {
+    #titleheading {
+      font-size: 40px;
+      padding-top: 100px;
+      padding-left: 5px; } }
+  @media (min-width: 767px) {
+    #titleheading {
+      font-size: 80px;
+      padding-top: 70px;
+      padding-left: 5px; } }
+  @media (min-width: 992px) {
+    #titleheading {
+      font-size: 100px;
+      margin-top: -5%;
+      margin-bottom: -5px;
+      padding-left: 5px; } }
+  @media (min-width: 1200px) {
+    #titleheading {
+      font-size: 100px;
+      padding-top: 378px;
+      padding-left: 5px;
+      margin-bottom: -10px; } }
+
+@media (min-width: 1200px) {
+  #titlesubheading {
+    font-size: 35px;
+    margin-top: -5px;
+    padding-left: 4%; } }
+
+.mainsubheading {
+  font-size: 38px;
+  padding-left: 0; }
 
 .mainhero {
   width: 100%;
@@ -53,24 +73,26 @@
   margin-right: 0;
   background-image: url("../images/executive communication.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 150% auto;
-  background-position: center; }
+  background-attachment: fixed; }
   @media (min-width: 320px) {
     .mainhero {
-      height: 340px; } }
+      height: 340px;
+      background-size: 200% auto;
+      background-position: -1% 16; } }
   @media (min-width: 600px) {
     .mainhero {
       height: 450px; } }
   @media (min-width: 767px) {
     .mainhero {
-      height: 600px; } }
+      height: 600px;
+      background-size: 200%;
+      background-position: 52% 2px; } }
   @media (min-width: 992px) {
     .mainhero {
       height: 890px; } }
   @media (min-width: 1200px) {
     .mainhero {
-      height: 1000px; } }
+      height: 550px; } }
 
 .secondhero {
   width: 100%;
