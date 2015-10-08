@@ -19,6 +19,9 @@
 	}
 }
 */
+* {
+  display: block; }
+
 #title {
   width: 100%;
   float: left;
@@ -52,19 +55,20 @@
   @media (min-width: 1200px) {
     #titleheading {
       font-size: 100px;
-      padding-top: 378px;
-      padding-left: 5px;
+      padding-top: 10%;
+      padding-left: 25%;
       margin-bottom: -10px; } }
 
 @media (min-width: 1200px) {
   #titlesubheading {
     font-size: 35px;
     margin-top: -5px;
-    padding-left: 4%; } }
+    padding-left: 28%; } }
 
 .mainsubheading {
   font-size: 38px;
-  padding-left: 0; }
+  padding-left: 22%;
+  padding-top: 0%; }
 
 .mainhero {
   width: 100%;
@@ -77,8 +81,8 @@
   @media (min-width: 320px) {
     .mainhero {
       height: 340px;
-      background-size: 200% auto;
-      background-position: -1% 16; } }
+      background-size: 150%;
+      background-position: 1%; } }
   @media (min-width: 600px) {
     .mainhero {
       height: 450px; } }
@@ -89,16 +93,67 @@
       background-position: 52% 2px; } }
   @media (min-width: 992px) {
     .mainhero {
-      height: 890px; } }
+      height: 607px; } }
   @media (min-width: 1200px) {
     .mainhero {
-      height: 550px; } }
+      height: 527px;
+      background-size: 180%;
+      background-position: 6% 27%; } }
+
+.transtri {
+  position: relative;
+  left: 37%;
+  top: -21%;
+  width: 120px;
+  height: 120px;
+  border-width: 90px;
+  border-style: solid;
+  border-color: transparent #e5fcf9 #e5fcf9 transparent;
+  transform: rotate(45deg);
+  z-index: 2; }
+  .transtri:after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 80px;
+    height: 80px;
+    border-width: 70px;
+    border-style: solid;
+    border-color: transparent #1e1f23 #1e1f23 transparent;
+    z-index: 0; }
 
 .secondhero {
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  display: block; }
+
+.secondintrotext {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center; }
+
+#sit1 {
+  font-size: 40px; }
+
+#sit2 {
+  font-size: 85px; }
+
+#sit3 {
+  font-size: 60px; }
+
+.textwrap {
+  width: 100%; }
+
+#tw21 {
+  padding-top: 15%; }
 
 .thirdhero {
   width: 100%;
