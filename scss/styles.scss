@@ -233,7 +233,7 @@ position: 0 -80%;
 }
 #sh1{
 margin-bottom:5%;
-font-size:200px;
+font-size:100px;
 }
 .sct{
 @include span(full);
@@ -342,7 +342,7 @@ position:relative;
 #tw32{
 padding-bottom:15%;
 padding-bottom:15%;
-box-shadow:0px -32px 60px 25px rgba(100, 200, 255, 0.1), 0px -4px 20px 28px rgba(100, 200, 255, 0.4);
+box-shadow:0px -32px 60px 25px rgba(100, 200, 255, 0.1);
 background-color:rgba(0,0,0,1);
 position:relative;
 z-index:1;
@@ -381,16 +381,41 @@ height:50%;
 .fourthhero{
 @include span(full);
 	background: {
-		image: url("../images/the future2.jpg");
+		image: 
+	  	  linear-gradient(
+		    rgba(255,255,255,0.6),
+                    rgba(10,255,255,0.15)),
+		  url("../images/the future2.jpg");
 		repeat: no-repeat;
 		attachment: fixed;
-		size: cover;
-		position: center 14%;
+		size: 100% 400px;
+		position: center;
 	}
-height: 240px;
-box-shadow:0px -32px 60px 25px rgba(100, 200, 300, 0.1), 0px -4px 20px 28px rgba(100, 200, 300, 0.4);
+
+height: 400px;
+box-shadow:0px -32px 60px 25px rgba(255, 255, 255, 0.1);
+z-index: -2;
 }
 
+#t3a{
+  z-index: 1;
+  margin-top:18%;
+  position:relative;
+  display: inline-block;
+  width: 80%;
+  left: 20%;
+  &:before{
+    content: "";
+    right: 0;
+    z-index:-1;
+    height:80px;
+    top:-15px;
+    width:100%;
+    position:absolute;
+    background-color: rgba(255,255,255,.8);
+    box-shadow: 0px 2px 1px 0px rgba(40,40,50,.1),0px 4px 2px 0px rgba(0,0,0,.2);
+    }
+}
 .taglinecloser{
   @include span(full);
 }
