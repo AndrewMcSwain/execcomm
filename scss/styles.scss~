@@ -90,7 +90,7 @@ $shp:(5%);
      font-size:100px; 
      padding-top:10%;
      padding-left: 25%;
-     margin-bottom: -10px;
+     margin-bottom: 3px;
 	   &:hover{
 	   ;
 	   }
@@ -102,7 +102,7 @@ $shp:(5%);
 #titlesubheading{
     @include respond-to('large'){
     font-size:35px; 
-    margin-top:-5px;
+    margin-top:0px;
     padding-left:28%;
     }
 }
@@ -342,7 +342,7 @@ position:relative;
 #tw32{
 padding-bottom:15%;
 padding-bottom:15%;
-box-shadow:0px -32px 60px 25px rgba(100, 200, 255, 0.1);
+//box-shadow:0px -32px 60px 25px rgba(100, 200, 255, 0.1);
 background-color:rgba(0,0,0,1);
 position:relative;
 z-index:1;
@@ -386,9 +386,9 @@ height:50%;
 		    rgba(255,255,255,0.6),
                     rgba(10,255,255,0.15)),
 		  url("../images/the future2.jpg");
-		repeat: no-repeat;
-		attachment: fixed;
-		size: 100% 400px;
+		//repeat: no-repeat;
+		//attachment: fixed;
+		//size: 100% 400px;
 		position: center;
 	}
 
@@ -409,7 +409,7 @@ z-index: -2;
     right: 0;
     z-index:-1;
     height:80px;
-    top:-20px;
+    top:-15px;
     width:100%;
     position:absolute;
     background-color: rgba(255,255,255,.8);
@@ -424,4 +424,13 @@ z-index: -2;
   @include respond-to('micro'){
 	  font-size:40px;
   }
+}
+
+.fifthhero{
+  @include span(full);
+  height: 500px;
+}
+
+#t4a{
+  margin-top: 40px;
 }

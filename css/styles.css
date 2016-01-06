@@ -57,12 +57,12 @@
       font-size: 100px;
       padding-top: 10%;
       padding-left: 25%;
-      margin-bottom: -10px; } }
+      margin-bottom: 3px; } }
 
 @media (min-width: 1200px) {
   #titlesubheading {
     font-size: 35px;
-    margin-top: -5px;
+    margin-top: 0px;
     padding-left: 28%; } }
 
 .mainsubheading {
