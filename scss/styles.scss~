@@ -166,16 +166,19 @@ $shp:(5%);
 	 border-color:transparent #1e1f23 #1e1f23 transparent;
 	 z-index:0;
    }
-  &:before{
-    content:"";
-    position:absolute;
-    top:-50%;
-    left:-50%;
-    width:80px;
-    height:40px;
-    z-index:0;
-    box-shadow:0px 5px 30px rgba(0,0,0,.2), 0px 8px 10px rgba(0,0,0,.4);  
-    }
+ /* &:before{
+   content:"";
+   position:absolute;
+   top:-50%;
+   left:-50%;
+   width:80px; //300px;
+   height:80px; //300px;
+   border-width:70px;
+   border-style:solid;
+   border-color:transparent #1e1f23 #1e1f23 transparent;
+   z-index:0;
+   box-shadow:0px 5px 30px rgba(0,0,0,.2), 0px 8px 10px rgba(0,0,0,.4);  
+    }*/
 }
 .secondhero{
    @include span(full);
@@ -292,7 +295,7 @@ bottom:20%;
 left:0;
 //box-shadow:-1px -13px 11px -5px inset;
 z-index:-5;
-box-shadow:0px 40px 0px rgba(236,236,236,1);
+box-shadow:0px 40px 0px #ECECEC, 0px -2px 2px #161616, 0px -11px 1px, 0px -5px 6px, 0px -20px 29px;
 }
 /*&:hover{
 //color:#4a4b4e;

@@ -110,7 +110,20 @@
   border-style: solid;
   border-color: transparent #e5fcf9 #e5fcf9 transparent;
   transform: rotate(45deg);
-  z-index: 2; }
+  z-index: 2;
+  /* &:before{
+    content:"";
+    position:absolute;
+    top:-50%;
+    left:-50%;
+    width:80px; //300px;
+    height:80px; //300px;
+    border-width:70px;
+    border-style:solid;
+    border-color:transparent #1e1f23 #1e1f23 transparent;
+    z-index:0;
+    box-shadow:0px 5px 30px rgba(0,0,0,.2), 0px 8px 10px rgba(0,0,0,.4);  
+     }*/ }
   .transtri:after {
     content: "";
     position: absolute;
@@ -122,15 +135,6 @@
     border-style: solid;
     border-color: transparent #1e1f23 #1e1f23 transparent;
     z-index: 0; }
-  .transtri:before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 80px;
-    height: 40px;
-    z-index: 0;
-    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2), 0px 8px 10px rgba(0, 0, 0, 0.4); }
 
 .secondhero {
   width: 100%;
@@ -264,7 +268,7 @@ background-color:rgba(30, 31, 35, 30);
     bottom: 20%;
     left: 0;
     z-index: -5;
-    box-shadow: 0px 40px 0px #ececec; }
+    box-shadow: 0px 40px 0px #ECECEC, 0px -2px 2px #161616, 0px -11px 1px, 0px -5px 6px, 0px -20px 29px; }
 
 #t2b {
   margin-top: 15%;
