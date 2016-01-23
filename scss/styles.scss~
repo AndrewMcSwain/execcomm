@@ -295,8 +295,7 @@ bottom:20%;
 left:0;
 //box-shadow:-1px -13px 11px -5px inset;
 z-index:-5;
-box-shadow:0px 40px 0px #ECECEC, 0px -2px 2px #161616, 0px -11px 1px, 0px -5px 6px, 0px -20px 29px;
-}
+box-shadow:0px 3px 0px #ECECEC, 0px -24px 1px #161616, 0px -21px 13px, 0px -5px 6px, 0px -20px 29px;}
 /*&:hover{
 //color:#4a4b4e;
 margin-bottom:25%;
@@ -443,18 +442,25 @@ z-index: -2;
 
 .fifthhero{
   @include span(full);
-  height: 500px;
+  height: 375px;
 }
 
 #t4a{
-  margin: 15% 15% 3%;
-  font-size: 60px;
+  margin: 5% auto 0px auto;
+  font-size: 80px;
   text-align:center;
-  display: inline-block;  
+  display: block;  
 }
 #t4b{
-  display: inline-block;
-  margin-left: 20%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 5% auto;
+  font-size: 60px;
+}
+#t4c{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
   font-size: 34px;
 } 
 .taglinecloser{
@@ -463,12 +469,10 @@ z-index: -2;
       }
 #t5a{
   position:relative;
-  margin-top: 20px;
-  font-size: 140px;
-  display: inline-block;
+  margin: 5% auto 1% auto;
+  font-size: 129px;
+  display: block;
   text-align:center;
-  margin-left: 15%;
-  margin-bottom:5px;
   &:before{
     content:"";
     position:absolute;

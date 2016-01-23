@@ -54,17 +54,21 @@
 <p class="text" id="t3a">get your point across.</p>
 </div>
 <div class="fifthhero">
-  <h1 class="heading" id="t4a">High-Stakes <br>Communications Training</h1>
-   <h2 class="subheading" id="t4b">For When It Matters Most</h2>  
+  <h1 class="heading" id="t4a">High-Stakes</h1>
+  <h2 class="subheading" id="t4b"> Communications Training</h2> 
+  <h3 id="t4c">For When It Matters Most</h3>  
 </div>
 
 <div class="taglinecloser">
-   <h1 class="heading">TOP - NOTCH</h1>
-   <h2 class="subheading" id="t4c">Operating at the Speed of Business</h1>
-   <p class="text"id="clincher">Native and Native-Like
-   Executive Business <br>
-   Communications Coaches<br>
-   </p>
+  <div class="topnotch">
+    <h1 class="heading"id="t5a">TOP - NOTCH</h1>
+    <h2 class="subheading" id="t5b">Operating at the Speed of Business</h1>
+  </div>
+  <div class="native">
+    <h1>Native and Native-Like
+      Executive Business</h1>
+    <h2>Communications Coaches</h2>
+  </div>
    <h3 class="closingheader">Operating out of
    Sao Paulo, Brazil</h3>
 </div>
