@@ -21,22 +21,22 @@
 </div>
 
 
-<div class="secondhero">
+<div class="secondHero">
    <div class="textwrap" id="tw21">
-      <div class="std">
-	 <p class="secondintrotext" id="sit1"> as an executive</p>
+      <div class="secondHeroInnerTextBox">
+	 <p class="secondIntroText" id="sit1"> as an executive</p>
 	 <h2 class="secondsubheading" id="sh2">in a High-Stakes Environment</h2>
       </div>
-      <div class="std">
+      <div class="secondHeroInnerTextBox">
 	 <p class="secondsubheading" id="sit2">SUCCESS </p>
-	 <p class="secondintrotext" id="sit3">hinges on</p>
+	 <p class="secondIntroText" id="sit3">hinges on</p>
       </div>
-      <div class="std">
+      <div class="secondHeroInnerTextBox">
 	 <h1 class="secondsubheading" id="sh1">Effective Communication</h1>
       </div>
-      <div class="std" id="std4">
-	 <p class="sct" id="t1">when every detail matters<br></p>
-	 <p class="sct" id="t2"> achieve pinpoint accuracy in your speech and delivery</p>
+      <div class="secondHeroInnerTextBox" id="secondHeroConclusionHolder">
+	 <p class="secondHeroConclusionText" id="secondHeroConclusionTextPart1">when every detail matters<br></p>
+	 <p class="secondHeroConclusionText" id="secondHeroConclusionTextPart2"> achieve pinpoint accuracy in your speech and delivery</p>
       </div>
    </div>
 </div>
@@ -46,7 +46,7 @@
     </div>
     <div class="textwrap" id="tw32">      
 	<p class="text" id="t2b">communicate</p>
-      <p class="text" id="t2c">empathy & authority<</p>
+      <p class="text" id="t2c">empathy & authority</p>
     </div>
 </div>
 </div>
@@ -61,16 +61,19 @@
 
 <div class="taglinecloser">
   <div class="topnotch">
-    <h1 class="heading"id="t5a">TOP - NOTCH</h1>
-    <h2 class="subheading" id="t5b">Operating at the Speed of Business</h1>
+    <h1 class="heading" id="taglineHeader">TOP-NOTCH</h1>
+    <h2 class="subheading" id="taglineSubheader">Operating at the Speed of Business</h1>
   </div>
   <div class="native">
-    <h1>Native and Native-Like
-      Executive Business</h1>
-    <h2>Communications Coaches</h2>
+    <h3 id="clincher">We are native and native-like executive business communications coaches operating out of Sao Paulo, Brazil </h3>
   </div>
-   <h3 class="closingheader">Operating out of
-   Sao Paulo, Brazil</h3>
-</div>
+   <div class="contact">
+     <div class="contactSubDiv">
+       <img src="images/Dakirby309-Simply-Styled-Gmail.png" class="contactIcon"></img><p class="contactText">andrewmcswain@gmail.com</p>
+      </div>
+     <div class=contactSubDiv">
+        <img src="images/whatsapp.png" class="contactIcon"></img><p class="contactText">+551199365-6835 </p></div>
+     </div>
+  </div>
 </body>
 </html>
